@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Gay test</title>
+  <link rel="icon" type="image/x-icon" href="icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+
+<style>
+  * {
+    font-family: 'Open Sans', sans-serif;
+  }
+  body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F1F6F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    position: relative;
+    width: 320px;
+    height: 150px;
+    padding: 24px;
+    border: 1px solid #9BA4B5;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+
+  .title {
+    margin: 0;
+    text-align: center;
+  }
+
+  button.primary {
+    padding: 12px 20px;
+    background-color: #394867;
+    border: 0;
+    border-radius: 4px;
+    outline: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+
+  button.secondary {
+    padding: 12px 20px;
+    background-color: #9BA4B5;
+    border: 0;
+    border-radius: 4px;
+    outline: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #212A3E;
+    cursor: pointer;
+  }
+
+  .yes {
+    position: absolute;
+    left: 96px;
+    top: 112px;
+  }
+
+  .no {
+    position: absolute;
+    right: 96px;
+    top: 112px;
+  }
+</style>
+<body>
+  <div class="card">
+    <h2 class="title">Are you gay?</h2>
+    <button class="primary yes">Yes</button>
+    <button class="secondary no">No</button>
+  </div>
+
+<script type="text/javascript">
+  const yes = document.querySelector('.yes');
+  const no = document.querySelector('.no');
+
+  yes.onclick = () => window.location.href = 'https://www.youtube.com/watch?v=ooOELrGMn14&pp=ygUVd2h5IGFyZSB5b3UgZ2F5IHNob3J0';
+  no.onclick = () => {
+    no.style.right = `${Math.round(50 + Math.random() * 200)}px`;
+    no.style.top = `${Math.round(90 + Math.random() * 60)}px`;
+  };
+
+</script>
+</body>
+</html>
